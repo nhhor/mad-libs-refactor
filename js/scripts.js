@@ -65,7 +65,8 @@ $(document).ready(function() {
     $(".appointmentTime2").text(appointmentTime2Input);
 
 
-    $("#story").show();
+    $("#submit").popupForm();
+    // onclick = window.open(test.html, '', 'scrollbars=no,menubar=no,height=600,width=800,resizable=yes,toolbar=no,status=no');
     event.preventDefault();
   });
 // survey

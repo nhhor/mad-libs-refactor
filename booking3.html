@@ -11,7 +11,7 @@
     <div class="container">
       <h1>Fill in the info to book your appointment</h1>
       <div id="blanks3">
-        <form>
+        <form id="popupForm" target="_blank">
           <div class="form-group">
             <label for="firstName">Your first Name</label>
             <input id="firstName" class="form-control" type="text">
@@ -34,15 +34,11 @@
           </div>
 
 
-          <button type="submit" class="btn">Confirm booking</button>
+          <a href="http://www.google.com"><button type="HIDDEN">Confirm booking</button></a>
+
         </form>
       </div>
 
-      <div id="story">
-        <h1>Confirmed Booking for <span class="firstName"></span> <span class="lastName"></span>:</h1>
-          <p> <span class="firstName"></span>, your Appointment <span class=""></span> is set, we'll see you from :
-            <span class="appointmentTime"></span>-
-            <span class="appointmentTime2"></span></p>
       </div>
     </div>
   </body>
