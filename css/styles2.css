@@ -1,0 +1,14 @@
+#story {
+  display: none;
+}
+
+body {
+  background-color: #cef8ff;
+
+}
+
+
+.jumbotron {
+  margin: 1px;
+  padding: 10px;
+}
