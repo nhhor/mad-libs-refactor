@@ -1,14 +1,26 @@
 $(document).ready(function() {
-  $("#XXXXXX").submit(function(event) {
+  $("#iceCreamForm").submit(function(event) {
 
 
     // var inputs = ["firstName", "lastName", "hairColor", "eyeColor", "flowerColor"];
+    var icecreams = ["firstIcecream", "secondIcecream", "thirdIcecream"];
 
-      inputs.forEach(function(input) {
-        var userInput = $("input#" + input).val();
-        $("." + input).text(userInput)
-      });
+    var flavors = [];
 
+    icecreams.forEach(function(icecream) {
+      var userInput = $("input#" + icecream).val();
+      flavors.push(userInput);
+
+      // $("." + input).text(userInput)
+    });
+
+    console.log(flavors);
+
+    flavors.forEach(function(flavor) {
+      $("ul#resultUL").append("<li>"+flavor+"</li>");
+    });
+
+    $(".results").show();
 
     event.preventDefault();
   });
